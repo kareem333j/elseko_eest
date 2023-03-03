@@ -13,6 +13,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 a {
     text-decoration: none;
     display: inline-block;
@@ -670,4 +672,9 @@ footer h1 .span2{
     body{
         font-size: 10px;
     }
+}
+
+.div-hr{
+    background-color: #18191A;
+    width: 100%;
 }
