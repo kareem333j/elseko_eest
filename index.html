@@ -22,6 +22,37 @@
                 <li><a href="#">الرئيسية <i class="fa-solid fa-house"></i></a></li>
             </ul>
         </nav>
+
+
+
+        <!-- more -->
+
+        <nav class="more">
+
+            <input class="checkbox" type="checkbox" id="check">
+            <label for="check">
+            <i class="fa-solid fa-bars" id="btn" onclick="side_on()"></i>
+            <i class="fa-solid fa-times" id="cancel" onclick="side_of()"></i>
+    
+        </label>
+            <div class="sidebar" id="sidebar">
+                <header>المزيد</header>
+                
+                <ul>
+                    <div>
+                        <h1><img src="image/icon.png" width="45px"></h1>
+                        <h1>Else<span>ko</span></h1>
+                    </div>
+                    <li><a href="index.html"><i class="fa-sharp fa-solid fa-house-chimney"></i>الرئيسية</a></li>
+                    <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>المنشورات</a></li>
+                    <li><a href="#"><i class="fa-solid fa-store"></i>المتجر</a></li>
+                    <li><a href="#zapayn"><i class="fa-solid fa-arrow-trend-up"></i>الزبائن</a></li>
+                    <li><a class="cart-btn2" href="#"><i class="fas fa-shopping-cart"></i>عربة</a></li>
+                    <li><a href="#"><i class="fa-solid fa-address-card"></i>حول</a></li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
     <!-- <header class="header2">
         <h1 class="log"></h1>
@@ -29,7 +60,7 @@
 
     <!-- sections (posts) -->
 
-    <section class="some-posts">
+    <section class="some-posts" id="section1">
         <!-- post 1 -->
         <div class="div-post-header">
             <h3>بعض المنشورات <i class="fa-solid fa-pen-to-square"></i></h3>
@@ -83,7 +114,7 @@
     </section>
 
 
-    <div class="div-hr" style="background:#18191A; width:100%">
+    <div class="div-hr" style="background:#18191A; width:100%" id="hr1">
         <hr style="margin:auto; width:30%; padding:5px; background:orange; border-radius:10px; border:0">
     </div>
     <!-- section vistors -->
@@ -94,18 +125,18 @@
         </div>
         <div class="zapayn-content">
             <h2>مفتوح الأن</h2>
-            <h3>: عدد الزبائن المتواجدون حاليا <<</h3>
+            <h3>: عدد الزبائن المتواجدون حاليا </h3>
             <h1>5</h1>
         </div>
     </section>
 
     
-    <div class="div-hr" style="background:#18191A; width:100%">
+    <div class="div-hr" style="background:#18191A; width:100%" id="hr2">
         <hr style="margin:auto; width:30%; padding:5px; background:orange; border-radius:10px; border:0">
     </div>
     <!-- products -->
 
-    <section class="products">
+    <section class="products" id="section2">
         <div class="div-post-header">
             <h3>متجر <i class="fa-solid fa-cart-shopping"></i></h3>
         </div>
@@ -197,7 +228,7 @@
 
     <!-- footer -->
 
-    <footer>
+    <footer id="footer">
 
         <div class="footer-date">
             <div class="loaction">
@@ -227,10 +258,13 @@
         <hr>
         <br>
         <div class="footer-programmer">
-            <h1>برمجة وتصميم: <span>كريم مجدي <<</span></h1>
+            <h1>برمجة وتصميم: <span>كريم مجدي </span></h1>
             <p>جميع الحقوق محفوظة <i class="fa-sharp fa-solid fa-copyright"></i></p>
         </div>
 
     </footer>
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
