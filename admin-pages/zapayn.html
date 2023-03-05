@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Elseko</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header class="header1">
+        <a href="../index.html"><h1 class="log"><img src="../image/icon.png" width="45px"><span class="span1">Else<span class="span2">ko</span></h1></a>
+
+        <!-- more -->
+
+        <nav class="more">
+
+            <input class="checkbox" type="checkbox" id="check">
+            <label for="check">
+            <i class="fa-solid fa-bars" id="btn" onclick="side_on()"></i>
+            <i class="fa-solid fa-times" id="cancel" onclick="side_of()"></i>
+    
+        </label>
+            <div class="sidebar" id="sidebar">
+                <header style="color: orange;font-size:2.6em">تعديل</header>
+                
+                <ul>
+                    <div>
+                        <h1><img src="../image/icon.png" width="45px">
+                        <h1>Else<span>ko</span></h1></a>
+                    </div>
+                    <li><a href="admin-home.html"><i class="fa-sharp fa-solid fa-house-chimney"></i>الرئيسية</a></li>
+                    <li><a href="edit-posts.html"><i class="fa-solid fa-pen-to-square"></i>المنشورات</a></li>
+                    <li><a href="edit-store.html"><i class="fa-solid fa-store"></i>المتجر</a></li>
+                    <li><a href="zapayn.html"><i class="fa-solid fa-arrow-trend-up"></i>الزبائن</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>الأدمن</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    
+
+    <!-- sections -->
+    <section class="section-home">
+        <div class="admin-side">
+            <h1>صفحة التعديلات</h1>
+            <ul>
+                <li><a href="admin-home.html">الرئيسية<i class="fa-sharp fa-solid fa-house-chimney"></i></a></li>
+                <li><a onclick="post_btn()" href="edit-posts.html">المنشورات<i class="fa-solid fa-pen-to-square"></i></a></li>
+                <li><a onclick="store_btn()" href="edit-store.html">المتجر<i class="fa-solid fa-store"></i></a></li>
+                <li><a onclick="zapayn_btn()" href="#">الزبائن<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                <li><a onclick="admin_btn()" href="#">الأدمن<i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+        
+
+        <div class="edit-zapayn">
+            <form class="form-num">
+                <input type="number" name="zapayn" placeholder="...أدخل عدد الزبائن المتواجدين">
+                <button id="update" class="update"><i class='fa-solid fa-arrows-rotate'></i> تحديث</button>
+                <!-- <input  class="update" type="submit" value=""> -->
+            </form>
+            <form class="active">
+                <input type="hidden" name="activate">
+                <input style="font-size:1.8em; background:green;color:#fff; cursor:pointer;font-weight:bold" type="submit" value="مفتوح">
+                <input style="font-size:1.8em; background:red;color:#fff; cursor:pointer;font-weight:bold" type="submit" value="مغلق">
+            </form>
+            <div class="num-zapayn">
+                <h1>: عدد الزبائن حاليا </h1>
+                <h1 class="num">5</h1>
+            </div>
+        </div>
+
+    </section>
+    
+
+
+    
+
+
+    <!-- footer -->
+
+    
+
+</body>
+</html>

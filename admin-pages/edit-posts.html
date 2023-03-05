@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Elseko</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header class="header1">
+        <a href="../index.html"><h1 class="log"><img src="../image/icon.png" width="45px"><span class="span1">Else<span class="span2">ko</span></h1></a>
+
+        <!-- more -->
+
+        <nav class="more">
+
+            <input class="checkbox" type="checkbox" id="check">
+            <label for="check">
+            <i class="fa-solid fa-bars" id="btn" onclick="side_on()"></i>
+            <i class="fa-solid fa-times" id="cancel" onclick="side_of()"></i>
+    
+        </label>
+            <div class="sidebar" id="sidebar">
+                <header style="color: orange;font-size:2.6em">تعديل</header>
+                
+                <ul>
+                    <div>
+                        <h1><img src="../image/icon.png" width="45px">
+                        <h1>Else<span>ko</span></h1></a>
+                    </div>
+                    <li><a href="admin-home.html"><i class="fa-sharp fa-solid fa-house-chimney"></i>الرئيسية</a></li>
+                    <li><a href="edit-posts.html"><i class="fa-solid fa-pen-to-square"></i>المنشورات</a></li>
+                    <li><a href="edit-store.html"><i class="fa-solid fa-store"></i>المتجر</a></li>
+                    <li><a href="zapayn.html"><i class="fa-solid fa-arrow-trend-up"></i>الزبائن</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>الأدمن</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    
+
+    <!-- sections -->
+    <section class="section-home">
+        <div class="admin-side">
+            <h1>صفحة التعديلات</h1>
+            <ul>
+                <li><a href="admin-home.html">الرئيسية<i class="fa-sharp fa-solid fa-house-chimney"></i></a></li>
+                <li><a onclick="post_btn()" href="edit-posts.html">المنشورات<i class="fa-solid fa-pen-to-square"></i></a></li>
+                <li><a onclick="store_btn()" href="edit-store.html">المتجر<i class="fa-solid fa-store"></i></a></li>
+                <li><a onclick="zapayn_btn()" href="zapayn.html">الزبائن<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                <li><a onclick="admin_btn()" href="#">الأدمن<i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+        
+
+        <!-- admin-posts -->
+
+        <div class="edit-post" id="admin2">
+            <form>
+                <input id="search-in" type="search" class="search" name="search-post" placeholder="...ابحث عن منشور">
+                <!-- <input class="search-btn" type="submit" value="Search"> -->
+                <button onclick="search_btn()" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <hr style="margin:auto; width:60%; color:orange; margin-bottom:10px">
+            <div class="post-result">
+                <h3 id="h3-result"></h3>
+
+
+                <!-- posts -->
+            <div class="posts" id="admin3">
+                <div class="post-content">
+                    <div class="post-header">
+                        <img src="../image/user.png" width="50px" alt="admin-photo">
+                        <div class="post-header-content">
+                            <h3>User Name</h3>
+                            <p>3.45 pm</p>
+                        </div>
+                    </div>
+                    <div class="user-post">
+                        <h2>في شغل جديد نازل يرجالة
+                            <br>
+                            إنشاء الله هينزل بكر
+                            ❤️
+                        </h2>
+                        <a href="#" class="edit">تعديل</a>
+                        <button class="remove">حذف</button>
+                    </div>
+                </div>
+                <!-- post 2 -->
+        
+                <div class="post-content">
+                    <div class="post-header">
+                        <img src="../image/user.png" width="50px" alt="admin-photo">
+                        <div class="post-header-content">
+                            <h3>User Name</h3>
+                            <p>3.45 pm</p>
+                        </div>
+                    </div>
+                    <div class="user-post">
+                        <h2>في شغل جديد نازل يرجالة</h2>
+                        <a href="#" class="edit">تعديل</a>
+                        <button class="remove">حذف</button>
+                    </div>
+                </div>
+                <!-- post 3 -->
+        
+                <div class="post-content">
+                    <div class="post-header">
+                        <img src="../image/user.png" width="50px" alt="admin-photo">
+                        <div class="post-header-content">
+                            <h3>User Name</h3>
+                            <p>3.45 pm</p>
+                        </div>
+                    </div>
+                    <div class="user-post">
+                        <h2>في شغل جديد نازل يرجالة</h2>
+                        <a href="#" class="edit">تعديل</a>
+                        <button class="remove">حذف</button>
+                    </div>
+                </div>
+        
+                <!-- post 4 -->
+        
+                <div class="post-content">
+                    <div class="post-header">
+                        <img src="../image/user.png" width="50px" alt="admin-photo">
+                        <div class="post-header-content">
+                            <h3>User Name</h3>
+                            <p>3.45 pm</p>
+                        </div>
+                    </div>
+                    <div class="user-post">
+                        <h2>انتظرو فيديو جامد الساعة 11 بليل <br> ضرب نار</h2>
+                        <a href="#" class="edit">تعديل</a>
+                        <button class="remove">حذف</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
+    
+
+
+    
+
+
+    <!-- footer -->
+
+    
+
+
+    <!-- javascript -->
+
+    <script>
+        /*function post_btn(){
+            document.getElementById("admin1").className = "off";
+            document.getElementById("admin2").className = "edit-post"
+        }*/
+
+        function search_btn(){
+            document.getElementById("h3-result").innerHTML =' <i class="fa-solid fa-circle-chevron-down"></i> '+ "نتائج البحث عن "+"(' "+ document.getElementById('search-in').value+" ') ";
+        }
+
+        /*function store_btn(){
+            document.getElementById("admin1").className = "off";
+            document.getElementById("admin2").className = "off";
+            document.getElementById("admin3").className = "edit-store";
+        }*/
+    </script>
+
+
+</body>
+</html>
